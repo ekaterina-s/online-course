@@ -1,5 +1,33 @@
 //bacgrounds
 $body-bg: #ff55;
+$box-item: red; //box__item
+
+$nav-link: #fff; //nav__link
+$header-link-cabinet-bg-1: #c89afc; //header__link-cabinet
+$header-link-cabinet-bg-2: #7c6afa; //header__link-cabinet
+$header-link-cabinet-text: #fff; //header__link-cabinet
+$header-head: #fff; //header__head
+$timer-number: #fff; //timer__number
+$timer-area-bg: #121212; //timer__time-area
+$statistics-bg: #121212; //statistics
+$statistics-order-button: #fff; //statistics__order-button
+$statistics__order-button-bg-1: #df5950; //statistics__order-button
+$statistics__order-button-bg-2: #451046; //statistics__order-button
+$students-amount-total: #fff; //students-amount__total
+$range-earned-number:#fff; //range__earned-number
+$scale-bg: #fff; //range__scale
+$bar-bg-1: #DF5950;
+$bar-bg-2: #451046;
+$toggle-btn: #fff;
+$header-bg: #121212;
 
 //fonts
-$basic-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+$basic-family: "Roboto", "Arial", "Helvetica", sans-serif;
+$second-family: "Verdana", "Arial", "Helvetica", sans-serif;
+
+//break-points
+$xs: 576px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+$xlg: 1440px;

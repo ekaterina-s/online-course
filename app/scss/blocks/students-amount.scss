@@ -1,0 +1,14 @@
+.students-amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.students-amount__total {
+  @include font(16px, 24px);
+  color: rgba($students-amount-total, 0.4);
+}
+
+.students-amount__total-number {
+  @include font(16px, 24px, $basic-family, bold);
+  color: $students-amount-total;
+}

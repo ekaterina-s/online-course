@@ -2,44 +2,91 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1643145308259">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн курс</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?t=1644700476021">
 </head>
 
 <body>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clock"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#coin"></use>
-    </svg>
-    <svg>
-        <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
-    </svg>
-    <!-- пример подключения картинок, и html-блоков, удалить перед началом работы -->
-    <div class="test">
-        <!-- подключаем шапку -->
-        <header>
-    Шапка сайта
-</header>
-
-        <div class="test__content">
-<picture><source srcset="img/mentor.avif" type="image/avif"><source srcset="img/mentor.webp" type="image/webp"><img class="test__img" src="img/mentor.jpg" alt="mentor picture"></picture>
-            <div class="test__pic"></div>
+  <header class="header">
+    <div class="header__top-panel">
+      <!-- <div class="header__container"> -->
+      <a href="#" class="header__logo">
+        <img src="img/logo.svg" alt="логотип компании">
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Расписание</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Преподаватели</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Рассылка</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="переключатель меню" type="button"><span class="visually-hidden">открыть
+          меню</span></button>
+      <a class="header__link-cabinet">Зайти в кабинет</a>
+      <!-- </div> -->
+    </div>
+    <div class="container">
+      <h1 class="header__head">Первый курс <br>
+        по компьютерной сборке</h1>
+      <div class="header__timer timer">
+        <div class="timer__time-area">
+          <div class="timer__number">18</div>
+          <div class="timer__amount">Дней</div>
         </div>
-
-        <!-- подключаем подвал -->
-        <footer>
-    Подвал сайта
-</footer>
-
+        <div class="timer__time-area">
+          <div class="timer__number">18</div>
+          <div class="timer__amount">Часов</div>
+        </div>
+        <div class="timer__time-area">
+          <div class="timer__number">18</div>
+          <div class="timer__amount">Минут</div>
+        </div>
+        <div class="timer__time-area">
+          <div class="timer__number">18</div>
+          <div class="timer__amount">Секунд</div>
+        </div>
+      </div>
+    </div>
+    <div class="header__statistics statistics">
+      <div class="statistics__container container">
+        <button class="statistics__order-button">Заказать курс</button>
+        <div class="statistics__students">
+          <div class="statistics__students-amount students-amount">
+            <div class="students-amount__total">Учеников всего:</div>
+            <div class="students-amount__total-number">200</div>
+          </div>
+          <div class="statistics__students-amount students-amount">
+            <div class="students-amount__total">Успешно закончили курс:</div>
+            <div class="students-amount__total-number">190</div>
+          </div>
+        </div>
+        <div class="statistics__slider slider">
+          <div class="slider__earned">
+            <div class="slider__earned-money">Заработано учениками:</div>
+            <div class="slider__earned-number">400 000₽</div>
+          </div>
+          <div class="slider__range range">
+            <div class="range__scale">
+              <div class="range__bar"></div>
+            </div>
+            <div class="range__earned">
+              <div class="range__earned-number">0</div>
+              <div class="range__earned-number">1 000 000</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-    <!-- подключаем js -->
-    <script src="js/main.js?t=1643145308259"></script>
+  </header>
 </body>
 
 </html>

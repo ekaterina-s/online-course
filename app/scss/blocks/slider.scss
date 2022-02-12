@@ -1,0 +1,15 @@
+.slider__earned {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__earned-money {
+  @include font(16px, 24px);
+  color: rgba( $students-amount-total, 0.4);
+  margin-bottom: 8px;
+}
+
+.slider__earned-number {
+  @include font(16px, 24px, $basic-family, bold);
+  color: $students-amount-total;
+}

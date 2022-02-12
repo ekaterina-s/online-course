@@ -1,0 +1,20 @@
+.timer {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 218px;
+}
+
+.timer__time-area {
+  padding: 20px 30px;
+  background-color: $timer-area-bg;
+}
+
+.timer__number {
+  @include font(36px, 50px, $basic-family, bold);
+  color: $timer-number;
+}
+
+.timer__amount {
+  @include font(16px, 22px);
+  color: rgba($timer-number, 0.4);
+}

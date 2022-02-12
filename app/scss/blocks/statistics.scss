@@ -1,0 +1,20 @@
+.statistics {
+  background-color: $statistics-bg;
+}
+
+.statistics__container {
+  display: flex;
+  gap: 80px;
+  padding: 35px 0 28px 0;
+}
+
+.statistics__order-button {
+  padding: 10px 30px;
+  background: linear-gradient(95deg, $statistics__order-button-bg-1 11%, $statistics__order-button-bg-2 94%);
+  border-radius: 50px;
+  @include font(16px, 24px, $basic-family, bold);
+  color: $statistics-order-button;
+  border: none;
+  width: 169px;
+  text-align: center;
+}

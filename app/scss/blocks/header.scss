@@ -1,0 +1,118 @@
+.header {
+  background: url(../../img/header__img.jpg) no-repeat 0 0;
+
+  @include media($md) {
+    background-color: $header-bg;
+  }
+}
+
+.header__logo {
+  display: block;
+}
+
+.header__top-panel {
+  margin-bottom: 188px;
+  max-width: 1760px;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 80px;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media($md) {
+    padding: 23px 80px;
+  }
+}
+
+.header__container {
+  // max-width: 1760px;
+  // margin: 0 auto;
+  // display: flex;
+  // padding: 40px 80px;
+  // align-items: center;
+  // justify-content: space-between;
+}
+
+.header__link-cabinet {
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: linear-gradient(94deg, $header-link-cabinet-bg-1 10%, $header-link-cabinet-bg-2 90%);
+  @include font(16px, 24px);
+  color: $header-link-cabinet-text;
+  border-radius: 50px;
+  width: 183px;
+  text-align: center;
+
+  @include media($md) {
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+  }
+}
+
+.header__head {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  @include font(64px, 90px, $basic-family, bold);
+  color: $header-head;
+}
+
+.header__toggle {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-color: $header-bg;
+  cursor: pointer;
+  border: none;
+  z-index: 4;
+
+  @include media($md) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: transparent;
+  }
+}
+
+.header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  right: 16px;
+  width: 27px;
+  height: 2px;
+  background-color: $toggle-btn;
+  box-shadow: 0 8px 0 0 $toggle-btn, 0 16px 0 0 $toggle-btn;
+}
+
+.header__toggle._active {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    width: 36px;
+    height: 2px;
+    background-color: $toggle-btn;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($toggle-btn, 30%);
+  }
+}
