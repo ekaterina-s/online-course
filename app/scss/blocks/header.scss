@@ -1,5 +1,5 @@
 .header {
-  background: url(../../img/header__img.jpg) no-repeat 0 0;
+  background: url(../img/header__img.jpg) no-repeat center;
 
   @include media($md) {
     background-color: $header-bg;
@@ -11,13 +11,7 @@
 }
 
 .header__top-panel {
-  margin-bottom: 188px;
-  max-width: 1760px;
-  margin: 0 auto;
-  display: flex;
-  padding: 40px 80px;
-  align-items: center;
-  justify-content: space-between;
+  margin-bottom: 146px;
 
   @include media($md) {
     padding: 23px 80px;
@@ -25,24 +19,19 @@
 }
 
 .header__container {
-  // max-width: 1760px;
-  // margin: 0 auto;
-  // display: flex;
-  // padding: 40px 80px;
-  // align-items: center;
-  // justify-content: space-between;
+  max-width: 1760px;
+  margin: 0 auto;
+  display: flex;
+  padding: 40px 80px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header__link-cabinet {
-  display: block;
-  text-decoration: none;
-  padding: 10px 30px;
+.header__button-cabinet {
+  // display: block;
+  // text-decoration: none;
   background: linear-gradient(94deg, $header-link-cabinet-bg-1 10%, $header-link-cabinet-bg-2 90%);
   @include font(16px, 24px);
-  color: $header-link-cabinet-text;
-  border-radius: 50px;
-  width: 183px;
-  text-align: center;
 
   @include media($md) {
     border-bottom: 1px solid white;
