@@ -1,0 +1,27 @@
+.button {
+  @include font(16px, 24px);
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: text-shadow 0.2s ease-in;
+  cursor: pointer;
+  text-align: center;
+  color: $button;
+  text-decoration: none;
+  background-color: transparent;
+
+  @include media($md) {
+    @include font(14px, 22px);
+    padding: 5px 20px;
+  }
+}
+
+.button--primary {
+  background: linear-gradient(94deg, $header-link-cabinet-bg-1 10%, $header-link-cabinet-bg-2 90%);
+}
+
+.button--secondary {
+  background: linear-gradient(95deg, $statistics__order-button-bg-1 11%, $statistics__order-button-bg-2 94%);
+}

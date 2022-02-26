@@ -2,19 +2,36 @@
   display: flex;
   gap: 30px;
   margin-bottom: 218px;
+
+  @include media($xs) {
+    gap: 15px;
+    margin-bottom: 80px;
+  }
 }
 
 .timer__time-area {
   padding: 20px 30px;
   background-color: $timer-area-bg;
+
+  @include media($md) {
+    padding: 10px 20px;
+  }
 }
 
 .timer__number {
   @include font(36px, 50px, $basic-family, bold);
   color: $timer-number;
+
+  @include media($md) {
+    @include font(30px, 44px, $basic-family, bold);
+  }
 }
 
 .timer__amount {
   @include font(16px, 22px);
   color: rgba($timer-number, 0.4);
+
+  @include media($md) {
+    @include font(10px, 16px);
+  }
 }

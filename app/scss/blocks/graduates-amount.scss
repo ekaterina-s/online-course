@@ -1,19 +1,18 @@
-.slider__earned {
+.graduates-amount {
   display: flex;
   gap: 30px;
 }
 
-.slider__earned-money {
+.graduates-amount__total {
   @include font(16px, 24px);
-  color: rgba( $students-amount-total, 0.4);
-  margin-bottom: 8px;
+  color: rgba($students-amount-total, 0.4);
 
   @include media($md) {
     @include font(12px, 20px);
   }
 }
 
-.slider__earned-number {
+.graduates-amount__total-number {
   @include font(16px, 24px, $basic-family, bold);
   color: $students-amount-total;
 

@@ -6,17 +6,19 @@
 .range__earned-number {
   @include font(16px, 24px);
   color: rgba($range-earned-number, 0.4);
+
+  @include media($md) {
+    @include font(12px, 20px);
+  }
 }
 
 .range__scale {
   margin-bottom: 5px;
-  width: 714px;
   height: 6px;
   background-color: $scale-bg;
 }
 
 .range__bar {
-  width: 60%;
   height: 6px;
   background: linear-gradient(95deg, $bar-bg-1 11%, $bar-bg-2 94%);
 }

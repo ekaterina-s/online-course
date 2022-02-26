@@ -4,11 +4,16 @@
 
 .statistics__container {
   display: flex;
+  align-items: center;
   gap: 80px;
-  padding: 35px 0 28px 0;
+  padding-top: 35px;
+  padding-bottom: 28px;
+
+  @include media($md) {
+    gap: 50px;
+  }
 }
 
-.statistics__button-order {
-  background: linear-gradient(95deg, $statistics__order-button-bg-1 11%, $statistics__order-button-bg-2 94%);
-  @include font(16px, 24px, $basic-family, bold);
+.statistics__slider {
+  flex-grow: 1;
 }

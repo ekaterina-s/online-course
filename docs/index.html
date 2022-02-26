@@ -8,11 +8,11 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1644781649969">
+  <link rel="stylesheet" href="css/main.css?t=1645891623264">
 </head>
 
 <body>
-<picture><source srcset="../img/Desktop.avif" type="image/avif"><source srcset="../img/Desktop.webp" type="image/webp"><img class="test" src="../img/Desktop.jpg" alt=""></picture>
+<picture><source srcset="../img/Desktop.avif" type="image/avif"><source srcset="../img/Desktop.webp" type="image/webp"><img hidden class="test" src="../img/Desktop.jpg" alt=""></picture>
   <header class="header">
     <div class="header__top-panel">
       <div class="header__container">
@@ -29,9 +29,8 @@
           <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <button class="header__toggle" aria-label="переключатель меню" type="button"><span class="visually-hidden">открыть
-          меню</span></button>
-      <a class="buttons header__button-cabinet">Зайти в кабинет</a>
+      <button class="header__toggle" aria-label="переключатель меню, открыть меню" type="button"></button>
+      <a href="#" class="button button--primary header__button-enter">Зайти в кабинет</a>
       </div>
     </div>
     <div class="container">
@@ -58,15 +57,15 @@
     </div>
     <div class="header__statistics statistics">
       <div class="statistics__container container">
-        <button class="buttons statistics__button-order">Заказать курс</button>
+        <button type="button" class="button button--secondary statistics__button-order"><b>Заказать курс</b></button>
         <div class="statistics__students">
           <div class="statistics__students-amount students-amount">
             <div class="students-amount__total">Учеников всего:</div>
             <div class="students-amount__total-number">200</div>
           </div>
-          <div class="statistics__students-amount students-amount">
-            <div class="students-amount__total">Успешно закончили курс:</div>
-            <div class="students-amount__total-number">190</div>
+          <div class="statistics__graduates-amount graduates-amount">
+            <div class="graduates-amount__total">Успешно закончили курс:</div>
+            <div class="graduates-amount__total-number">190</div>
           </div>
         </div>
         <div class="statistics__slider slider">
@@ -76,7 +75,7 @@
           </div>
           <div class="slider__range range">
             <div class="range__scale">
-              <div class="range__bar"></div>
+              <div style="width: 60%;" class="range__bar"></div>
             </div>
             <div class="range__earned">
               <div class="range__earned-number">0</div>

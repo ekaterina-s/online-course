@@ -30,11 +30,14 @@
   align-items: center;
   gap: 56px;
 
+  @include media($lg) {
+    gap: 44px;
+  }
+
   @include media($md) {
     &._active {
       flex-direction: column;
       justify-content: center;
-      align-items: center;
       padding: 69px 541px 0 0px;
     }
   }
