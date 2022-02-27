@@ -34,7 +34,7 @@
     padding: 40px 20px;
   }
 
-  @include media($lg) {
+  @include media($md) {
     padding: 0;
   }
 }
