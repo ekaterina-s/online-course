@@ -10,3 +10,36 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.lock {
+  overflow: hidden;
+}
+
+.break {
+  @include media($xs) {
+    display: none;
+  }
+}
+
+.block-head {
+  @include font(48px, 67px, $basic-family, bold);
+  color: $block-head;
+
+  @include media($md) {
+    @include font(28px, 46px, $basic-family, bold);
+  }
+}
+
+.column-head {
+  @include font(36px, 50px, $basic-family, bold);
+  color: $column-head;
+}
+
+.column-description {
+  @include font(14px, 22px);
+  color: $start-text;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+  margin-right: 18px;
+}

@@ -11,30 +11,32 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="body js-body">
   <img hidden class="test" src="../img/Desktop.jpg" alt="">
   <header class="header">
     <div class="header__top-panel">
       <div class="header__container">
-      <a href="#" class="header__logo">
-        <img class="logo" src="img/logo.svg" alt="логотип компании" width="40" height="40">
-      </a>
-      <nav class="header__nav nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Расписание</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Преподаватели</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Рассылка</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-        </ul>
-      </nav>
-      <button class="header__toggle" aria-label="переключатель меню, открыть меню" type="button"></button>
-      <a href="#" class="button button--primary header__button-enter">Зайти в кабинет</a>
+        <a href="#" class="header__logo">
+          <img class="logo" src="img/logo.svg" alt="логотип компании" width="40" height="40">
+        </a>
+        <nav class="header__nav nav js-nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Курсы</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Расписание</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Преподаватели</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Рассылка</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="button button--primary header__button-enter">Зайти в кабинет</a>
+        <button class="header__toggle js-burger" aria-label="переключатель меню, открыть меню" type="button">
+          <span class="header__toggle-line"></span>
+        </button>
       </div>
     </div>
     <div class="container">
-      <h1 class="header__head">Первый курс <br>
+      <h1 class="header__head">Первый курс <br class="break">
         по компьютерной сборке</h1>
       <div class="header__timer timer">
         <div class="timer__time-area">
@@ -85,8 +87,106 @@
         </div>
       </div>
     </div>
-
   </header>
+  <div class="about">
+    <div class="about__container container">
+      <div class="about__wrapper border">
+        <img src="img/about-img.png" alt="изображение системного блока" class="about-img">
+      </div>
+      <div class="about__text">
+        <h2 class="about__head block-head">Чем мы занимаемся?</h2>
+        <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque, dignissim et
+          feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci fermentum vestibulum, morbi.
+          Et
+          neque, adipiscing sapien sem senectus praesent aenean consequat. Aenean facilisi turpis aliquet fringilla.
+          Nunc
+          sem felis sed interdum feugiat mattis elit, sollicitudin. Quam pharetra rhoncus risus, cursus id elementum
+          aliquet. Nullam turpis arcu malesuada arcu interdum placerat nisi, lobortis. </p>
+      </div>
+    </div>
+  </div>
+  <div class="start">
+    <div class="container">
+      <h2 class="start__head block-head">Быстрый старт</h2>
+      <p class="start__text">Больше 90% учеников прошли полный курс и смогли <br> собрать свой первый компьютер</p>
+      <div class="start__percentage percentage">
+        <div class="percentage__first-column first-column">
+          <h3 class="first-column__head column-head">100%</h3>
+          <div class="first-column__area"></div>
+          <p class="first-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Netus eget velit
+            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+        </div>
+        <div class="percentage__second-column second-column">
+          <h3 class="second-column__head column-head">75%</h3>
+          <div class="second-column__area"></div>
+          <p class="second-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Netus eget
+            velit
+            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+        </div>
+        <div class="percentage__third-column third-column">
+          <h3 class="third-column__head column-head">50%</h3>
+          <div class="third-column__area"></div>
+          <p class="third-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Netus eget velit
+            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+        </div>
+        <div class="percentage__fourth-column fourth-column">
+          <h3 class="fourth-column__head column-head">Итог</h3>
+          <div class="fourth-column__area"></div>
+          <p class="fourth-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Netus eget
+            velit
+            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="advantages">
+    <div class="container">
+      <h2 class="advantages__head block-head">Получите профессию прямо сейчас</h2>
+      <div class="advantages__columns columns">
+        <div class="columns__first">
+          <h3 class="columns__head">Только практические
+            навыки в работе</h3>
+          <p class="columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque
+            accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+          </p>
+        </div>
+        <div class="columns__second">
+          <h3 class="columns__head">Работа на самом
+            современном оборудовании</h3>
+          <p class="columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque
+            accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+          </p>
+        </div>
+        <div class="columns__third">
+          <h3 class="columns__head">Сертификация
+            по окончании обучения</h3>
+          <p class="columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque
+            accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partners">
+    <div class="container">
+      <h2 class="partners__head block-head">Партнеры - топовые бренды</h2>
+      <div class="partners__table">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+        <img src="img/msi-logo.png" alt="логотип msi">
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

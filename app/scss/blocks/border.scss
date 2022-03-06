@@ -1,0 +1,6 @@
+.border {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 30px;
+  border-image-source: linear-gradient(94deg, $linear-gradient-1 10%, $linear-gradient-2 90%);
+}

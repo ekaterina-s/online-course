@@ -1,11 +1,10 @@
 .timer {
   display: flex;
   gap: 30px;
-  margin-bottom: 218px;
+  text-align-last: center;
 
   @include media($xs) {
     gap: 15px;
-    margin-bottom: 80px;
   }
 }
 
@@ -16,6 +15,10 @@
   @include media($md) {
     padding: 10px 20px;
   }
+
+  @include media($xs) {
+    padding: 10px 14px;
+  }
 }
 
 .timer__number {
@@ -24,6 +27,10 @@
 
   @include media($md) {
     @include font(30px, 44px, $basic-family, bold);
+  }
+
+  @include media($xs) {
+    @include font(26px, 40px, $basic-family, bold);
   }
 }
 

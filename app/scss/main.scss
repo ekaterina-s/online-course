@@ -4,7 +4,8 @@
 @import 'fonts'; //подключаем шрифты (локально)
 @import 'general';
 //подключаем БЭМ блоки
-@import 'blocks/test';
+@import 'blocks/button.scss';
+@import 'blocks/border.scss';
 @import 'blocks/header.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/container.scss';
@@ -13,5 +14,15 @@
 @import 'blocks/students-amount.scss';
 @import 'blocks/slider.scss';
 @import 'blocks/range.scss';
-@import 'blocks/button.scss';
 @import 'blocks/graduates-amount.scss';
+@import 'blocks/about.scss';
+@import 'blocks/body.scss';
+@import 'blocks/start.scss';
+@import 'blocks/percentage.scss';
+@import 'blocks/first-column.scss';
+@import 'blocks/second-column.scss';
+@import 'blocks/third-column.scss';
+@import 'blocks/fourth-column.scss';
+@import 'blocks/advantages.scss';
+@import 'blocks/columns.scss';
+@import 'blocks/partners.scss';

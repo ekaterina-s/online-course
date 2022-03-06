@@ -12,6 +12,11 @@
   @include media($md) {
     gap: 50px;
   }
+
+  @include media($xs) {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
 
 .statistics__slider {

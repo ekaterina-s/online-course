@@ -5,6 +5,10 @@
   @include media($md) {
     gap: 83px;
   }
+
+  @include media($xs) {
+    gap: 150px;
+  }
 }
 
 .students-amount__total {

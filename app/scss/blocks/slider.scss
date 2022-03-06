@@ -1,6 +1,10 @@
 .slider__earned {
   display: flex;
   gap: 30px;
+
+  @include media($xs) {
+    gap: 75px;
+  }
 }
 
 .slider__earned-money {

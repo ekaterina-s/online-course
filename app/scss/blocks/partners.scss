@@ -1,0 +1,14 @@
+.partners {
+  margin-bottom: 200px;
+}
+
+.partners__head {
+  margin-bottom: 89px;
+}
+
+.partners__table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 132px;
+  column-gap: 58px;
+}

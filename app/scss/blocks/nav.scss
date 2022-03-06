@@ -12,6 +12,9 @@
     pointer-events: none;
     z-index: 1;
     overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &._active {
       transform: translateY(0);
@@ -19,6 +22,7 @@
       pointer-events: auto;
       background-color: rgba($header-bg, 0.91);
     }
+
   }
 }
 
@@ -35,22 +39,20 @@
   }
 
   @include media($md) {
-    &._active {
-      flex-direction: column;
-      justify-content: center;
-      padding: 69px 541px 0 0px;
-    }
+    margin: auto;
+    display: block;
+    text-align: center;
   }
 }
 .nav__link {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   text-decoration: none;
   padding: 5px 0;
   @include font(16px, 24px);
   color: $nav-link;
 
   @include media($md) {
-    border-bottom: 1px solid white;
-    padding: 20px 0;
+    padding: 16px;
   }
 }

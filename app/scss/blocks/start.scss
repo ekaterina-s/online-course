@@ -1,0 +1,25 @@
+.start {
+  margin-bottom: 200px;
+}
+
+.start__head {
+  margin-bottom: 49px;
+
+  @include media($md) {
+    margin-bottom: 15px;
+  }
+}
+
+.start__text {
+  margin: 0;
+  padding: 0;
+  @include font(16px, 26px);
+  color: $start-text;
+  opacity: 0.5;
+  margin-bottom: 80px;
+
+  @include media($md) {
+    @include font(12px, 22px);
+    margin-bottom: 20px;
+  }
+}

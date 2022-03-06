@@ -1,8 +1,10 @@
 .header {
   background: $header-bg url(../img/header__img.jpg) top center/cover no-repeat;
+  margin-bottom: 200px;
 
   @include media($md) {
     background-color: $header-bg;
+    margin-bottom: 50px;
   }
 }
 
@@ -12,13 +14,18 @@
   @include media($lg) {
     margin-right: 40px;
   }
+
+  @include media($xs) {
+    margin-right: 0;
+  }
 }
 
 .header__top-panel {
   margin-bottom: 146px;
 
   @include media($md) {
-    padding: 23px 80px;
+    padding: 23px 25px;
+    margin-bottom: 75px;
   }
 }
 
@@ -49,10 +56,14 @@
 }
 
 .header__button-enter {
+  @include media($lg) {
+    margin-left: auto;
+  }
 
   @include media($md) {
-    border-bottom: 1px solid white;
-    padding: 20px 0;
+    // margin-left: auto;
+    margin-right: 20px;
+    background: transparent;
   }
 }
 
@@ -66,6 +77,10 @@
   @include media($md) {
     @include font(41px, 67px, $basic-family, bold);
   }
+
+  @include media($xs) {
+    @include font(30px, 48px, $basic-family, bold);
+  }
 }
 
 .header__toggle {
@@ -74,8 +89,10 @@
   height: 32px;
   background-color: $header-bg;
   cursor: pointer;
-  border: none;
+  border: 0;
   z-index: 4;
+  position: relative;
+
 
   @include media($md) {
     display: flex;
@@ -85,44 +102,46 @@
   }
 }
 
-.header__toggle::before {
-  content: "";
+.header__toggle-line{
+  height: 3px;
+  background-color: $header-toggle-line;
   position: absolute;
-  top: 23px;
-  right: 16px;
-  width: 27px;
-  height: 2px;
-  background-color: $toggle-btn;
-  box-shadow: 0 8px 0 0 $toggle-btn, 0 16px 0 0 $toggle-btn;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  transition: background-color .2s ease;
+  &:after, &:before{
+    content: ' ';
+    position: absolute;
+    inset: 0;
+    background-color: $header-toggle-line;
+    transition: transform .2s ease;
+  }
+  &:before{
+    transform: translateY(-9px);
+  }
+  &:after{
+    transform: translateY(9px);
+  }
 }
 
-.header__toggle._active {
-  top: 0;
-  right: auto;
-  left: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 33px;
-    right: 20px;
-    width: 36px;
-    height: 2px;
-    background-color: $toggle-btn;
+.header__toggle._active{
+  .header__toggle-line{
+    background-color: transparent;
   }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
+  .header__toggle-line:before{
+    transform: translateY(0) rotate(45deg);
   }
-
-  &::after {
-    transform: rotate(-45deg);
+  .header__toggle-line:after{
+    transform: translateY(0) rotate(-45deg);
   }
+}
 
-  &:active::before,
-  &:active::after {
-    background-color: fade($toggle-btn, 30%);
+.header__timer {
+  margin-bottom: 218px;
+
+  @include media($xs) {
+    margin-bottom: 80px;
   }
 }
