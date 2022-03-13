@@ -1,0 +1,10 @@
+.advantages-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 82px;
+
+  @include media($md) {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+}

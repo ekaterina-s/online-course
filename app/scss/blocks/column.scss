@@ -1,0 +1,81 @@
+// .columns {
+//   display: flex;
+//   gap: 24px;
+// }
+
+.column__head {
+  @include font(36px, 50px, $basic-family, bold);
+  color: $column-head;
+  margin: 0;
+  padding: 0;
+
+  @include media($md) {
+    @include font(26px, 40px, $basic-family, bold);
+  }
+}
+
+.column__area {
+  max-width: 324px;
+  background: linear-gradient(94deg, $linear-gradient-1 9.5%, $linear-gradient-2 90%);
+}
+
+.column__area--first {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  height: 80px;
+
+  @include media($md) {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  @include media($xs) {
+    margin-bottom: 10px;
+  }
+}
+
+.column__area--second {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  height: 60px;
+
+  @include media($md) {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.column__area--third {
+  margin-top: 45px;
+  margin-bottom: 60px;
+  height: 30px;
+
+  @include media($md) {
+    margin-top: 35px;
+    margin-bottom: 45px;
+  }
+}
+
+.column__area--fourth {
+  margin-top: 55px;
+  margin-bottom: 70px;
+  height: 10px;
+
+  @include media($md) {
+    margin-top: 45px;
+    margin-bottom: 55px;
+  }
+}
+
+.column__description {
+  @include font(14px, 22px);
+  color: $start-text;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+  margin-right: 7px;
+
+  @include media($md) {
+    @include font(10px, 18px);
+  }
+}

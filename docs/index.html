@@ -8,7 +8,7 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1646583513337">
+  <link rel="stylesheet" href="css/main.css?t=1647195673716">
 </head>
 
 <body class="body js-body">
@@ -70,12 +70,12 @@
             <div class="graduates-amount__total-number">190</div>
           </div>
         </div>
-        <div class="statistics__slider slider">
-          <div class="slider__earned">
-            <div class="slider__earned-money">Заработано учениками:</div>
-            <div class="slider__earned-number">400 000₽</div>
+        <div class="statistics__slider statistics-slider">
+          <div class="statistics-slider__earned">
+            <div class="statistics-slider__earned-money">Заработано учениками:</div>
+            <div class="statistics-slider__earned-number">400 000₽</div>
           </div>
-          <div class="slider__range range">
+          <div class="statistics-slider__range range">
             <div class="range__scale">
               <div style="width: 60%;" class="range__bar"></div>
             </div>
@@ -108,37 +108,46 @@
   <div class="start">
     <div class="container">
       <h2 class="start__head block-head">Быстрый старт</h2>
-      <p class="start__text">Больше 90% учеников прошли полный курс и смогли <br> собрать свой первый компьютер</p>
-      <div class="start__percentage percentage">
-        <div class="percentage__first-column first-column">
-          <h3 class="first-column__head column-head">100%</h3>
-          <div class="first-column__area"></div>
-          <p class="first-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Netus eget velit
-            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+      <p class="start__text">Больше 90% учеников прошли полный курс и смогли <br class="start__break"> собрать свой
+        первый компьютер</p>
+      <div class="slider">
+        <div class="start__percentage percentage">
+          <div class="percentage__column column">
+            <h3 class="column__head">100%</h3>
+            <div class="column__area column__area--first"></div>
+            <p class="column__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Netus eget velit
+              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+          </div>
+          <div class="percentage__column column">
+            <h3 class="column__head">75%</h3>
+            <div class="column__area column__area--second"></div>
+            <p class="column__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Netus eget
+              velit
+              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+          </div>
+          <div class="percentage__column column">
+            <h3 class="column__head">50%</h3>
+            <div class="column__area column__area--third"></div>
+            <p class="column__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Netus eget velit
+              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+          </div>
+          <div class="percentage__column column">
+            <h3 class="column__head">Итог</h3>
+            <div class="column__area column__area--fourth"></div>
+            <p class="column__description">Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Netus eget
+              velit
+              quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+          </div>
         </div>
-        <div class="percentage__second-column second-column">
-          <h3 class="second-column__head column-head">75%</h3>
-          <div class="second-column__area"></div>
-          <p class="second-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Netus eget
-            velit
-            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-        </div>
-        <div class="percentage__third-column third-column">
-          <h3 class="third-column__head column-head">50%</h3>
-          <div class="third-column__area"></div>
-          <p class="third-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Netus eget velit
-            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
-        </div>
-        <div class="percentage__fourth-column fourth-column">
-          <h3 class="fourth-column__head column-head">Итог</h3>
-          <div class="fourth-column__area"></div>
-          <p class="fourth-column__description column-description">Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Netus eget
-            velit
-            quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+        <div class="slider__pagination pagination">
+          <button class="pagination__dot" aria-label="переключить на слайд 1"></button>
+          <button class="pagination__dot" aria-label="переключить на слайд 2"></button>
+          <button class="pagination__dot" aria-label="переключить на слайд 3"></button>
+          <button class="pagination__dot" aria-label="переключить на слайд 4"></button>
         </div>
       </div>
     </div>
@@ -146,25 +155,31 @@
   <div class="advantages">
     <div class="container">
       <h2 class="advantages__head block-head">Получите профессию прямо сейчас</h2>
-      <div class="advantages__columns columns">
-        <div class="columns__first">
-          <h3 class="columns__head">Только практические
+      <div class="advantages__columns advantages-columns">
+        <div class="advantages-column">
+          <img class="advantages-column__icon" src="img/advantages-icon-1.svg" alt="иконка компьютер">
+          <h3 class="advantages-column__head">Только практические
             навыки в работе</h3>
-          <p class="columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque
+          <p class="advantages-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
+            quisque
             accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
           </p>
         </div>
-        <div class="columns__second">
-          <h3 class="columns__head">Работа на самом
+        <div class="advantages-column">
+          <img class="advantages-column__icon" src="img/advantages-icon-2.svg" alt="иконка флешка">
+          <h3 class="advantages-column__head">Работа на самом
             современном оборудовании</h3>
-          <p class="columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque
+          <p class="advantages-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
+            quisque
             accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
           </p>
         </div>
-        <div class="columns__third">
-          <h3 class="columns__head">Сертификация
+        <div class="advantages-column">
+          <img class="advantages-column__icon" src="img/advantages-icon-3.svg" alt="иконка usb-кабель">
+          <h3 class="advantages-column__head">Сертификация
             по окончании обучения</h3>
-          <p class="columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque
+          <p class="advantages-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit
+            quisque
             accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
           </p>
         </div>
@@ -174,19 +189,52 @@
   <div class="partners">
     <div class="container">
       <h2 class="partners__head block-head">Партнеры - топовые бренды</h2>
-      <div class="partners__table">
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
-<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img src="img/msi-logo.png" alt="логотип msi"></picture>
+      <div class="slider">
+        <div class="partners__table">
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+<picture><source srcset="img/msi-logo.avif" type="image/avif"><source srcset="img/msi-logo.webp" type="image/webp"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></picture>
+        </div>
+        <div class="slider__pagination pagination">
+          <button class="pagination__dot" aria-label="переключить на слайд 1"></button>
+          <button class="pagination__dot" aria-label="переключить на слайд 2"></button>
+          <button class="pagination__dot" aria-label="переключить на слайд 3"></button>
+          <button class="pagination__dot" aria-label="переключить на слайд 4"></button>
+        </div>
       </div>
+
     </div>
   </div>
-  <script src="../js/main.js?t=1646583513337"></script>
+  <!-- <script>
+
+//scroll top
+const header  = document.querySelector('.header');
+
+addClassHeader = () => {
+    header.classList.add('header--scroll');
+}
+
+removeClassHeader = () => {
+    header.classList.remove('header--scroll');
+}
+
+window.addEventListener('scroll', function () {
+
+    let getScrollposition = window.scrollY;
+
+    if (getScrollposition > 0) {
+        addClassHeader();
+    } else {
+        removeClassHeader();
+    }
+});
+  </script> -->
+  <script src="../js/main.js?t=1647195673716"></script>
 </body>
 
 </html>

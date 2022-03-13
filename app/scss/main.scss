@@ -5,6 +5,7 @@
 @import 'general';
 //подключаем БЭМ блоки
 @import 'blocks/button.scss';
+@import 'blocks/slider.scss';
 @import 'blocks/border.scss';
 @import 'blocks/header.scss';
 @import 'blocks/nav.scss';
@@ -12,17 +13,16 @@
 @import 'blocks/timer.scss';
 @import 'blocks/statistics.scss';
 @import 'blocks/students-amount.scss';
-@import 'blocks/slider.scss';
+@import 'blocks/statistics-slider.scss';
 @import 'blocks/range.scss';
 @import 'blocks/graduates-amount.scss';
 @import 'blocks/about.scss';
 @import 'blocks/body.scss';
 @import 'blocks/start.scss';
 @import 'blocks/percentage.scss';
-@import 'blocks/first-column.scss';
-@import 'blocks/second-column.scss';
-@import 'blocks/third-column.scss';
-@import 'blocks/fourth-column.scss';
 @import 'blocks/advantages.scss';
-@import 'blocks/columns.scss';
+@import 'blocks/column.scss';
 @import 'blocks/partners.scss';
+@import 'blocks/pagination.scss';
+@import 'blocks/advantages-columns.scss';
+@import 'blocks/advantages-column.scss';

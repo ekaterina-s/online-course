@@ -2,7 +2,6 @@ import { testFunction } from './scripts/test';
 testFunction();
 
 const burger = document.querySelector('.js-burger');
-console.log(burger);
 const nav = document.querySelector('.js-nav');
 const body = document.querySelector('.js-body');
 

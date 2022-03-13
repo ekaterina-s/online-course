@@ -1,12 +1,36 @@
 .start {
   margin-bottom: 200px;
+
+  @include media($md) {
+    margin-bottom: 30px;
+  }
 }
 
 .start__head {
   margin-bottom: 49px;
+  margin-left: 125px;
+  position: relative;
 
   @include media($md) {
+    margin-left: 0;
     margin-bottom: 15px;
+  }
+}
+
+.start__head::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: -110px;
+  width: 90px;
+  height: 44px;
+  background: url(../../img/ellipse.svg) no-repeat 0 0;
+  transform: rotate(230deg);
+  margin-right: 20px;
+
+  @include media($md) {
+    display: none;
   }
 }
 
@@ -21,5 +45,11 @@
   @include media($md) {
     @include font(12px, 22px);
     margin-bottom: 20px;
+  }
+}
+
+.start__break {
+  @include media($md) {
+    display: none;
   }
 }

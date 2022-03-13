@@ -2,9 +2,16 @@
   background: $header-bg url(../img/header__img.jpg) top center/cover no-repeat;
   margin-bottom: 200px;
 
+  @include media($lg) {
+    margin-bottom: 70px;
+  }
+
   @include media($md) {
     background-color: $header-bg;
-    margin-bottom: 50px;
+  }
+
+  @include media($xs) {
+    margin-bottom: 30px;
   }
 }
 

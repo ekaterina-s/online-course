@@ -4,6 +4,10 @@
 
 .partners__head {
   margin-bottom: 89px;
+
+  @include media($md) {
+    margin-bottom: 15px;
+  }
 }
 
 .partners__table {
@@ -11,4 +15,29 @@
   grid-template-columns: repeat(4, 1fr);
   row-gap: 132px;
   column-gap: 58px;
+
+  @include media($md) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  @include media($xs) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.partners__logo.visually-hidden {
+  @include media($xs) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }

@@ -1,0 +1,27 @@
+.statistics-slider__earned {
+  display: flex;
+  gap: 30px;
+
+  @include media($xs) {
+    gap: 75px;
+  }
+}
+
+.statistics-slider__earned-money {
+  @include font(16px, 24px);
+  color: rgba( $students-amount-total, 0.4);
+  margin-bottom: 8px;
+
+  @include media($md) {
+    @include font(12px, 20px);
+  }
+}
+
+.statistics-slider__earned-number {
+  @include font(16px, 24px, $basic-family, bold);
+  color: $students-amount-total;
+
+  @include media($md) {
+    @include font(12px, 20px, $basic-family, bold);
+  }
+}

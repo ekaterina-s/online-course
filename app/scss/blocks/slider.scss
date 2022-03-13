@@ -1,27 +1,8 @@
-.slider__earned {
-  display: flex;
-  gap: 30px;
-
+.slider {
   @include media($xs) {
-    gap: 75px;
-  }
-}
-
-.slider__earned-money {
-  @include font(16px, 24px);
-  color: rgba( $students-amount-total, 0.4);
-  margin-bottom: 8px;
-
-  @include media($md) {
-    @include font(12px, 20px);
-  }
-}
-
-.slider__earned-number {
-  @include font(16px, 24px, $basic-family, bold);
-  color: $students-amount-total;
-
-  @include media($md) {
-    @include font(12px, 20px, $basic-family, bold);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }

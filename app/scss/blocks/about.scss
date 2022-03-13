@@ -1,19 +1,32 @@
 .about {
-  margin-bottom: 200px;
+  // margin-bottom: 200px;
+  margin-bottom: 274px;
+
+  @include media($lg) {
+    margin-bottom: 130px;
+  }
 
   @include media($md) {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
+  }
+
+  @include media($xs) {
+    margin-bottom: 30px;
   }
 }
 
 .about__container {
   display: flex;
   gap: 139px;
+
+  @include media($lg) {
+   gap: 100px;
+  }
 }
 
 .about__wrapper {
   position: relative;
-  width: 526px;
+  min-width: 526px;
   height: 499px;
 
   @include media($md) {
@@ -27,15 +40,21 @@
   left: 10px;
 }
 
-.about__text {
-  width: 636px;
-}
+// .about__text {
+//   max-width: 636px;
+// }
 
 .about__head {
+  margin-top: 69px;
   margin-bottom: 45px;
 
-  @include media($md) {
+  @include media($lg) {
+    margin-top: 50px;
     margin-bottom: 15px;
+  }
+
+  @include media($md) {
+    margin-top: 0;
   }
 }
 
@@ -44,9 +63,11 @@
   margin: 0;
   @include font(16px, 26px);
   color: $about-paragraph;
+  max-width: 636px;
 
   @include media($md) {
     text-align: justify;
     @include font(12px, 22px);
+    max-width: 755px;
   }
 }
