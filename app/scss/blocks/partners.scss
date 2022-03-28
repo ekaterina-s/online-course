@@ -1,43 +1,67 @@
 .partners {
-  margin-bottom: 200px;
+  margin-bottom: 393px;
+
+  @include media($md) {
+    margin-bottom: 30px;
+  }
 }
 
 .partners__head {
-  margin-bottom: 89px;
+  margin-bottom: 116px;
+  margin-left: 125px;
+  position: relative;
 
   @include media($md) {
+    margin: 0;
     margin-bottom: 15px;
   }
 }
 
+.partners__head::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: -142px;
+  width: 90px;
+  height: 44px;
+  background: url(../img/ellipse.svg) no-repeat;
+  transform: rotate(45deg);
+  margin-right: 20px;
+
+  @include media($md) {
+    display: none;
+  }
+}
+
 .partners__table {
+  margin-left: 53px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 132px;
-  column-gap: 58px;
+  row-gap: 58px;
+  column-gap: 80px;
 
   @include media($md) {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
+    overflow-x: auto;
+    max-width: 198px;
+    margin: 0 auto;
   }
 
   @include media($xs) {
-    grid-template-columns: 1fr;
+    // grid-template-columns: 1fr;
   }
 }
 
-.partners__logo.visually-hidden {
-  @include media($xs) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+.partners__link {
+  display: inline-block;
+  padding: 0 66px 29px 0;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.partners__logo {
+  height: 93px;
 }

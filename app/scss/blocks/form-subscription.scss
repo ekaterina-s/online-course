@@ -1,0 +1,21 @@
+.form-subscription__email {
+  border: none;
+  max-width: 492px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  justify-content: space-around;
+  background: $footer-bg;
+  opacity: 0.25;
+  border-radius: 50px;
+  gap: 264px;
+}
+
+.form-subscription__input {
+  margin: 0;
+  padding: 11px 0 11px 30px;
+  @include font(14px, 22px);
+  color: $footer-text;
+  opacity: 0.8;
+  border: none;
+  border-radius: 50px;
+}

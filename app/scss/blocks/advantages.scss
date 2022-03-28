@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 200px;
+  margin-bottom: 225px;
 
   @include media($md) {
     margin-bottom: 30px;
@@ -8,6 +8,7 @@
 
 .advantages__head {
   margin-bottom: 120px;
+  text-align: center;
 
   @include media($md) {
     margin-bottom: 15px;

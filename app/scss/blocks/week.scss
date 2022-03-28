@@ -1,0 +1,31 @@
+.week__header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  @include font(14px, 22px);
+  color: $week-text;
+  opacity: 0.5;
+}
+
+.week__header--odd {
+  text-align: right;
+}
+
+.week__header--even {
+  text-align: left;
+}
+
+.week__description {
+  padding: 0;
+  margin: 0;
+  @include font(18px, 29px);
+  color: $week-text;
+}
+
+.week__description--odd {
+  text-align: right;
+}
+
+.week__description--even {
+  text-align: left;
+}

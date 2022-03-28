@@ -33,6 +33,12 @@
   }
 }
 
+.description-text {
+  @include font(16px, 26px);
+  color: $description-text;
+  opacity: 0.5;
+}
+
 .test {
   position: absolute;
   top: 0;
@@ -41,6 +47,11 @@
   pointer-events: none;
   opacity: 0.5;
   z-index: 5;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
 }
 
 // @include media($md) {

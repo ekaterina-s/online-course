@@ -1,0 +1,40 @@
+.trainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trainer__photo {
+  margin-bottom: 40px;
+}
+
+.trainer__name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  @include font(24px, 37px);
+  text-align: center;
+  color: $trainer-text;
+}
+
+.trainer__description {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  @include font(16px, 26px);
+  text-align: center;
+  color: $trainer-text;
+  opacity: 0.8;
+}
+
+.trainer__biography-link {
+  display: inline-block;
+  text-decoration: none;
+  @include font(16px, 24px);
+  padding: 10px 30px;
+  color: $trainer-text;
+  text-align: center;
+  border: 1px solid $trainer-text;
+  border-radius: 50px;
+  box-sizing: border-box;
+}

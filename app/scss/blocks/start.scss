@@ -1,5 +1,5 @@
 .start {
-  margin-bottom: 200px;
+  margin-bottom: 178px;
 
   @include media($md) {
     margin-bottom: 30px;
@@ -25,7 +25,7 @@
   left: -110px;
   width: 90px;
   height: 44px;
-  background: url(../../img/ellipse.svg) no-repeat 0 0;
+  background: url(../img/ellipse.svg) no-repeat 0 0;
   transform: rotate(230deg);
   margin-right: 20px;
 
@@ -37,13 +37,10 @@
 .start__text {
   margin: 0;
   padding: 0;
-  @include font(16px, 26px);
-  color: $start-text;
   opacity: 0.5;
   margin-bottom: 80px;
 
   @include media($md) {
-    @include font(12px, 22px);
     margin-bottom: 20px;
   }
 }

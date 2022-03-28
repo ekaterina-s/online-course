@@ -1,0 +1,54 @@
+.trainers {
+  margin-bottom: 200px;
+
+  @include media($md) {
+    margin-bottom: 30px;
+  }
+}
+
+.trainers__header {
+  position: relative;
+  margin-left: 127px;
+  margin-bottom: 113px;
+
+  @include media($md) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.trainers__header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 39px;
+  left: -127px;
+  width: 90px;
+  height: 44px;
+  background: url(../img/ellipse.svg) no-repeat 0 0;
+  transform: rotate(181deg);
+
+  @include media($md) {
+    display: none;
+  }
+}
+
+.trainers__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 110px;
+  padding-right: 110px;
+  display: flex;
+  gap: 213px;
+
+  @include media($md) {
+    padding: 0;
+    gap: 126px;
+  }
+
+  @include media($xs) {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
