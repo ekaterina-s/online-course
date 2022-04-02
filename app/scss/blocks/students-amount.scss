@@ -7,24 +7,16 @@
   }
 
   @include media($xs) {
-    gap: 150px;
+    gap: 168px;
   }
 }
 
 .students-amount__total {
   @include font(16px, 24px);
   color: rgba($students-amount-total, 0.4);
-
-  @include media($md) {
-    @include font(12px, 20px);
-  }
 }
 
 .students-amount__total-number {
   @include font(16px, 24px, $basic-family, bold);
   color: $students-amount-total;
-
-  @include media($md) {
-    @include font(12px, 20px, $basic-family, bold);
-  }
 }

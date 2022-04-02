@@ -28,15 +28,14 @@
   color: $block-head;
 
   @include media($md) {
-    @include font(28px, 46px, $basic-family, bold);
+    @include font(28px, 42px, $basic-family, bold);
     text-align: center;
   }
 }
 
 .description-text {
-  @include font(16px, 26px);
-  color: $description-text;
-  opacity: 0.5;
+  @include font(16px, 24px);
+  color: rgba($description-text, 0.5);
 }
 
 .test {

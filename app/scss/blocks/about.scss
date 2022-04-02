@@ -25,6 +25,8 @@
 
   @include media($md) {
     flex-direction: column;
+    gap: 75px;
+    align-items: center;
   }
 
   @include media($xs) {
@@ -54,7 +56,7 @@
 
   @include media($lg) {
     margin-top: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
 
   @include media($md) {
@@ -68,8 +70,7 @@
   max-width: 636px;
 
   @include media($md) {
-    text-align: justify;
-    @include font(12px, 22px);
+    text-align: center;
     max-width: 755px;
   }
 }

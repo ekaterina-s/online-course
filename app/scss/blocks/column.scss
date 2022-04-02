@@ -94,8 +94,7 @@
 
 .column__description {
   @include font(14px, 22px);
-  color: $column-text;
-  opacity: 0.5;
+  color: rgba($column-text, 0.5);
   margin: 0;
   padding: 0;
   padding-right: 24px;

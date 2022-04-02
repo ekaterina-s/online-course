@@ -13,7 +13,6 @@
   background-color: transparent;
 
   @include media($md) {
-    @include font(14px, 22px);
     padding: 5px 20px;
   }
 }

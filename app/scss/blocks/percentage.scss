@@ -4,5 +4,7 @@
 
   @include media($md) {
     grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }

@@ -1,8 +1,8 @@
 .advantages {
-  margin-bottom: 225px;
+  margin-bottom: 210px;
 
   @include media($md) {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
   }
 }
 
@@ -11,6 +11,6 @@
   text-align: center;
 
   @include media($md) {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
 }

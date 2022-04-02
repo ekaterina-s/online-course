@@ -82,11 +82,11 @@
   color: $header-head;
 
   @include media($md) {
-    @include font(41px, 67px, $basic-family, bold);
+    @include font(40px, 60px, $basic-family, bold);
   }
 
   @include media($xs) {
-    @include font(30px, 48px, $basic-family, bold);
+    @include font(30px, 45px, $basic-family, bold);
   }
 }
 

@@ -7,6 +7,10 @@
   margin: 0;
   margin-bottom: 30px;
   text-align: center;
+
+  @include media($md) {
+    margin-bottom: 24px;
+  }
 }
 
 .footer__description {

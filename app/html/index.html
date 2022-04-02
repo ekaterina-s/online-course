@@ -40,7 +40,7 @@
 </head>
 
 <body class="body js-body">
-  <img class="test" src="../img/Desktop.jpg" alt="">
+  <img hidden class="test" src="../img/Desktop.jpg" alt="">
   <header class="header">
     <div class="header__top-panel">
       <div class="header__container">
@@ -180,33 +180,39 @@
       <ul class="advantages__list advantages-list">
         <li class="advantages-list__item">
           <img class="advantages-list__icon" src="img/advantages-icon-1.svg" alt="иконка компьютер">
-          <h3 class="advantages-list__head">Только практические
-            навыки в работе</h3>
-          <p class="advantages-list__text description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Netus eget velit
-            quisque
-            accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
-          </p>
+          <div class="advantages-list__box">
+            <h3 class="advantages-list__head">Только практические
+              навыки в работе</h3>
+            <p class="advantages-list__text description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Netus eget velit
+              quisque
+              accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </p>
+          </div>
         </li>
         <li class="advantages-list__item">
           <img class="advantages-list__icon" src="img/advantages-icon-2.svg" alt="иконка флешка">
-          <h3 class="advantages-list__head">Работа на самом
-            современном оборудовании</h3>
-          <p class="advantages-list__text description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Netus eget velit
-            quisque
-            accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
-          </p>
+          <div class="advantages-list__box">
+            <h3 class="advantages-list__head">Работа на самом
+              современном оборудовании</h3>
+            <p class="advantages-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Netus eget velit
+              quisque
+              accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </p>
+          </div>
         </li>
         <li class="advantages-list__item">
           <img class="advantages-list__icon" src="img/advantages-icon-3.svg" alt="иконка usb-кабель">
-          <h3 class="advantages-list__head">Сертификация
-            по окончании обучения</h3>
-          <p class="advantages-list__text description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Netus eget velit
-            quisque
-            accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
-          </p>
+          <div class="advantages-list__box">
+            <h3 class="advantages-list__head">Сертификация
+              по окончании обучения</h3>
+            <p class="advantages-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Netus eget velit
+              quisque
+              accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.
+            </p>
+          </div>
         </li>
       </ul>
     </div>
@@ -215,14 +221,31 @@
     <div class="container">
       <h2 class="partners__head block-head">Партнеры - топовые бренды</h2>
       <div class="partners__table">
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
-        <a href="#" class="partners__link"><img class="partners__logo" src="img/msi-logo.png" alt="логотип msi"></a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+        <a href="#" class="partners__link">
+          <img class="partners__logo" src="img/msi-logo.png" alt="логотип msi" width="198" height="93">
+        </a>
+
       </div>
     </div>
   </section>
@@ -281,19 +304,19 @@
       <h2 class="trainers__header block-head">Ваши преподаватели</h2>
       <ul class="trainers__list">
         <li class="trainers__item trainer">
-          <img class="trainer__photo" src="img/trainer-photo1.png" alt="фото тренера">
+          <img class="trainer__photo" src="img/trainer-photo1.png" alt="фото тренера" width="190" height="190">
           <h4 class="trainer__name">Дмитрий Иванов</h4>
           <p class="trainer__description">Специалист по видеокартам</p>
           <a href="#" class="trainer__biography-link">Биография</a>
         </li>
         <li class="trainers__item trainer">
-          <img class="trainer__photo" src="img/trainer-photo2.png" alt="фото тренера">
+          <img class="trainer__photo" src="img/trainer-photo2.png" alt="фото тренера" width="190" height="190">
           <h4 class="trainer__name">Дмитрий Иванов</h4>
           <p class="trainer__description">Специалист по видеокартам</p>
           <a href="#" class="trainer__biography-link">Биография</a>
         </li>
         <li class="trainers__item trainer">
-          <img class="trainer__photo" src="img/trainer-photo3.png" alt="фото тренера">
+          <img class="trainer__photo" src="img/trainer-photo3.png" alt="фото тренера" width="190" height="190">
           <h4 class="trainer__name">Дмитрий Иванов</h4>
           <p class="trainer__description">Специалист по видеокартам</p>
           <a href="#" class="trainer__biography-link">Биография</a>
@@ -301,7 +324,7 @@
       </ul>
     </div>
   </section>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <h2 class="footer__head block-head">Статьи каждую неделю</h2>
       <p class="footer__description description-text">Больше 90% учеников прошли полный курс и смогли собрать свой
@@ -310,38 +333,12 @@
       <form action="get" class="footer__form-subscription form-subscription">
         <fieldset class="form-subscription__email">
           <legend class="visually-hidden">поле для ввода электронной почты</legend>
-          <!-- <div class="xxx"> -->
-            <label class="form-subscription__email-label">
-              <input class="form-subscription__input" type="text" name="email" placeholder="E-mail" required>
-            </label>
-            <button class="button button--secondary form-subscription__button" type="button"></button>
-          <!-- </div> -->
+          <label class="form-subscription__email-label">
+            <input class="form-subscription__input" type="text" name="email" placeholder="E-mail" required>
+          </label>
+          <button class="button button--secondary form-subscription__button" type="button"></button>
         </fieldset>
       </form>
-      <!-- <div class="xxx">
-          <input type="text" class="form-subscription__input">
-          <button class="button button--secondary form-subscription__button" type="button"></button>
-        </div>
-      </form>
-      <fieldset class="form__catdata">
-        <legend class="visually-hidden">Данные кота</legend>
-        <label class="form__catdata-label">
-          имя:<sup>*</sup> <input class="form__catdata-textfield" type="text" name="catname" placeholder="Барсик"
-            required>
-        </label>
-        <label class="form__catdata-label">
-          вес (кг):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catweight"
-            placeholder="7" required>
-        </label>
-        <label class="form__catdata-label">
-          возраст (лет):<sup>*</sup> <input class="form__catdata-textfield" type="number" name="catage"
-            placeholder="7" required>
-        </label>
-      </fieldset> -->
-      <!-- <div class="footer__subscription">
-        <p class="footer__email">E-mail</p>
-        <button class="button button--secondary footer__button-subscription" type="button">Подписаться</button>
-      </div> -->
       <ul class="footer__social-network-list">
         <li class="footer__social-network-item"><a href="#" class="footer__link"><svg>
               <use xlink:href="#vk" />
@@ -358,7 +355,7 @@
 
       </ul>
     </div>
-  </footer>
+  </footer> -->
   <!-- <script>
 
 //scroll top
