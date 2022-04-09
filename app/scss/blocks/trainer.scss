@@ -27,13 +27,5 @@
 }
 
 .trainer__biography-link {
-  display: inline-block;
-  text-decoration: none;
-  @include font(16px, 24px);
-  padding: 10px 30px;
-  color: $trainer-text;
-  text-align: center;
   border: 1px solid $trainer-text;
-  border-radius: 50px;
-  box-sizing: border-box;
 }

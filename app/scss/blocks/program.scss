@@ -1,5 +1,5 @@
 .program {
-  margin-bottom: 257px;
+  margin-bottom: 230px;
 
   @include media($md) {
     margin-bottom: 70px;
@@ -37,7 +37,7 @@
 .program__description {
   padding: 0;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 95px;
   text-align: center;
 
   @include media($md) {

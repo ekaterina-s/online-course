@@ -19,8 +19,25 @@
 
 .button--primary {
   background: linear-gradient(94deg, $linear-gradient-1 10%, $linear-gradient-2 90%);
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .button--secondary {
   background: linear-gradient(95deg, $statistics__order-button-bg-1 11%, $statistics__order-button-bg-2 94%);
+
+  &:hover {
+   opacity: 0.8;
+  }
+}
+
+.button--tertiary {
+  border: 1px solid $trainer-text;
+
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
 }

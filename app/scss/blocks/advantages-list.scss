@@ -21,6 +21,10 @@
     gap: 50px;
     text-align: left;
   }
+
+  @include media($xs) {
+    gap: 0;
+  }
 }
 
 .advantages-list__icon {
@@ -30,11 +34,11 @@
   margin-bottom: 60px;
 
   @include media($md) {
-    margin-bottom: 20px;
+    margin: 0;
   }
 
-  @include media($md) { //maybe xs
-    margin: 0;
+  @include media($xs) {
+    width: 50px;
   }
 }
 

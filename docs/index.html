@@ -8,7 +8,7 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css?t=1648896695747">
+  <link rel="stylesheet" href="css/main.css?t=1649506995165">
   <svg style="display: none;">
     <symbol viewBox="0 0 24 24" id="vk">
       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -40,7 +40,7 @@
 </head>
 
 <body class="body js-body">
-<picture><source srcset="../img/Desktop.avif" type="image/avif"><source srcset="../img/Desktop.webp" type="image/webp"><img hidden class="test" src="../img/Desktop.jpg" alt=""></picture>
+<picture><source srcset="../img/Desktop.avif" type="image/avif"><source srcset="../img/Desktop.webp" type="image/webp"><img class="test" src="../img/Desktop.jpg" alt=""></picture>
   <header class="header">
     <div class="header__top-panel">
       <div class="header__container">
@@ -256,47 +256,45 @@
         свой
         первый компьютер
       </p>
-      <div class="program__schedule schedule">
-        <div class="schedule__odd">
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--odd">Неделя №1</h4>
-            <p class="week__description week__description--odd">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--odd">Неделя №3</h4>
-            <p class="week__description week__description--odd">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--odd">Неделя №5</h4>
-            <p class="week__description week__description--odd">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--odd">Неделя №7</h4>
-            <p class="week__description week__description--odd">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-        </div>
-        <div class="schedule__even">
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--even">Неделя №2</h4>
-            <p class="week__description week__description--even">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--even">Неделя №4</h4>
-            <p class="week__description week__description--even">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-          <div class="schedule__week week">
-            <h4 class="week__header week__header--even">Неделя №6</h4>
-            <p class="week__description week__description--even">Красивая часть курса, <br>
-              которая помогает в успехе</p>
-          </div>
-        </div>
-      </div>
+      <ol class="program__schedule schedule">
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №1</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №2</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №3</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №4</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №5</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №6</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+
+        <li class="schedule__week week">
+          <h4 class="week__header">Неделя №7</h4>
+          <p class="week__description">Красивая часть курса, <br>
+            которая помогает в успехе</p>
+        </li>
+
+      </ol>
     </div>
   </section>
   <section class="trainers">
@@ -307,19 +305,19 @@
 <picture><source srcset="img/trainer-photo1.avif" type="image/avif"><source srcset="img/trainer-photo1.webp" type="image/webp"><img class="trainer__photo" src="img/trainer-photo1.png" alt="фото тренера" width="190" height="190"></picture>
           <h4 class="trainer__name">Дмитрий Иванов</h4>
           <p class="trainer__description">Специалист по видеокартам</p>
-          <a href="#" class="trainer__biography-link">Биография</a>
+          <a href="#" class="trainer__biography-link button button--tertiary">Биография</a>
         </li>
         <li class="trainers__item trainer">
 <picture><source srcset="img/trainer-photo2.avif" type="image/avif"><source srcset="img/trainer-photo2.webp" type="image/webp"><img class="trainer__photo" src="img/trainer-photo2.png" alt="фото тренера" width="190" height="190"></picture>
           <h4 class="trainer__name">Дмитрий Иванов</h4>
           <p class="trainer__description">Специалист по видеокартам</p>
-          <a href="#" class="trainer__biography-link">Биография</a>
+          <a href="#" class="trainer__biography-link button button--tertiary">Биография</a>
         </li>
         <li class="trainers__item trainer">
 <picture><source srcset="img/trainer-photo3.avif" type="image/avif"><source srcset="img/trainer-photo3.webp" type="image/webp"><img class="trainer__photo" src="img/trainer-photo3.png" alt="фото тренера" width="190" height="190"></picture>
           <h4 class="trainer__name">Дмитрий Иванов</h4>
           <p class="trainer__description">Специалист по видеокартам</p>
-          <a href="#" class="trainer__biography-link">Биография</a>
+          <a href="#" class="trainer__biography-link button button--tertiary">Биография</a>
         </li>
       </ul>
     </div>
@@ -380,7 +378,7 @@ window.addEventListener('scroll', function () {
     }
 });
   </script> -->
-  <script src="../js/main.js?t=1648896695747"></script>
+  <script src="../js/main.js?t=1649506995165"></script>
 </body>
 
 </html>

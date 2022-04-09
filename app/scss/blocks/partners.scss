@@ -1,5 +1,5 @@
 .partners {
-  margin-bottom: 393px;
+  margin-bottom: 354px;
 
   @include media($md) {
     margin-bottom: 70px;
@@ -38,11 +38,10 @@
   margin-left: 53px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  max-width: 1040px;
 
   @include media($md) {
     grid-auto-flow: column;
-    // column-gap: 10px;
-    // row-gap: 10px;
     overflow-x: auto;
     margin-left: 0;
   }
@@ -58,14 +57,12 @@
   cursor: pointer;
   height: 154px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
   width: 260px;
 
   @include media($md) {
-    align-items: center;
-    justify-content: center;
     border-bottom: 0;
   }
 }
