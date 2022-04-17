@@ -7,11 +7,7 @@
   }
 
   @include media($md) {
-    margin-bottom: 70px;
-  }
-
-  @include media($xs) {
-    margin-bottom: 75px;
+    margin-bottom: 143px;
   }
 }
 
@@ -25,7 +21,7 @@
 
   @include media($md) {
     flex-direction: column;
-    gap: 75px;
+    gap: 40px;
     align-items: center;
   }
 
@@ -47,7 +43,7 @@
 }
 
 .about__text {
-  @include media($xs) {
+  @include media($md) {
     order: -1;
   }
 }
