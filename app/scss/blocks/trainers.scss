@@ -37,17 +37,17 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-  padding-left: 110px;
-  padding-right: 110px;
+  padding-left: 100px;
+  padding-right: 100px;
   display: flex;
-  gap: 213px;
+  gap: 16px;
+  justify-content: space-between;
 
   @include media($md) {
     padding: 0;
-    gap: 126px;
   }
 
-  @include media($xs) {
+  @include media($sm) {
     flex-direction: column;
     gap: 50px;
   }

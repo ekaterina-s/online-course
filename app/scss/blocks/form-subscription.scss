@@ -6,14 +6,36 @@
   justify-content: space-around;
   background: rgba($footer-bg, 0.25);
   border-radius: 50px;
-  gap: 264px;
+}
+
+.form-subscription__email-label {
+  flex-grow: 1;
 }
 
 .form-subscription__input {
   margin: 0;
-  padding: 11px 0 11px 30px;
+  padding: 11px 100px 11px 30px;
   @include font(14px, 22px);
-  color: rgba($footer-text, 0.8);
+  color: $form-subscription-color;
   border: none;
+  border-radius: 50px 0 0 50px;
+  width: 100%;
+  background-color: rgba($form-subscription-color, 0.25);
+
+  &::placeholder {
+    @include font(14px, 22px);
+    color: $form-subscription-color;
+  }
+}
+
+
+.form-subscription__button {
+  width: 160px;
+  flex-shrink: 0;
   border-radius: 50px;
+  margin-left: -90px;
+
+  @include media($xs) {
+    width: 140px;
+  }
 }

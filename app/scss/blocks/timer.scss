@@ -1,23 +1,23 @@
 .timer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  text-align-last: center;
 
   @include media($xs) {
-    gap: 15px;
+    gap: 8px;
   }
 }
 
 .timer__time-area {
-  padding: 20px 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $timer-area-bg;
+  text-align: center;
+
 
   @include media($md) {
-    padding: 10px 20px;
-  }
-
-  @include media($xs) {
-    padding: 10px 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -30,11 +30,11 @@
   }
 
   @include media($xs) {
-    @include font(26px, 40px, $basic-family, bold);
+    @include font(18px, 27px, $basic-family, bold);
   }
 }
 
 .timer__amount {
-  @include font(16px, 22px);
+  @include font(13px, 20px);
   color: rgba($timer-number, 0.4);
 }

@@ -13,12 +13,23 @@
     gap: 50px;
   }
 
-  @include media($xs) {
+  @include media($sm) {
     flex-direction: column;
     gap: 25px;
+    align-items: stretch;
   }
 }
 
 .statistics__slider {
   flex-grow: 1;
+}
+
+.statistics__button-order {
+  @include media($sm) {
+    align-self: center;
+  }
+
+  @include media($xs) {
+    align-self: stretch;
+  }
 }

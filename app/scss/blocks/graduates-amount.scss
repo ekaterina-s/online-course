@@ -1,10 +1,7 @@
 .graduates-amount {
   display: flex;
-  gap: 30px;
-
-  @include media($xs) {
-    gap: 66px;
-  }
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .graduates-amount__total {

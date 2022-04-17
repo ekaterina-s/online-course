@@ -44,3 +44,10 @@
     margin-bottom: 30px;
   }
 }
+
+.program__schedule {
+  @include media($xs) {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

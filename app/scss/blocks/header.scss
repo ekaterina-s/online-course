@@ -147,6 +147,7 @@
 
 .header__timer {
   margin-bottom: 218px;
+  max-width: 514px;
 
   @include media($xs) {
     margin-bottom: 80px;

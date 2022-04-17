@@ -1,14 +1,6 @@
 .students-amount {
   display: flex;
-  gap: 100px;
-
-  @include media($md) {
-    gap: 83px;
-  }
-
-  @include media($xs) {
-    gap: 136px;
-  }
+  justify-content: space-between;
 }
 
 .students-amount__total {

@@ -5,7 +5,6 @@
 
   @include media($xs) {
     gap: 30px;
-    margin-left: 20%;
   }
 
   &::after {
@@ -19,7 +18,7 @@
     background: linear-gradient(94deg, $linear-gradient-1 10%, $linear-gradient-2 90%);
 
     @include media($xs) {
-      left: -13%;
+      left: 0;
     }
   }
 }
@@ -34,6 +33,7 @@
     text-align: left;
     margin: 0;
     padding: 0;
+    padding-left: 60px;
   }
 
   &:before {
@@ -43,11 +43,13 @@
     position: absolute;
     top: 47px;
     right: 0;
-    background-color: #fff;
+    background-color: $schedule-color;
 
     @include media($xs) {
       width: 20px;
-      right: 104%;
+      right: auto;
+      left: 0;
+      top: 16px;
     }
   }
 }
@@ -61,14 +63,11 @@
   @include media($xs) {
     margin: 0;
     padding: 0;
+    padding-left: 60px;
   }
 
   &:before {
     left: 0;
     right: auto;
-
-    @include media($xs) {
-      left: -13%;
-    }
   }
 }
