@@ -6,7 +6,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 82px;
 
-  @include media($md) { //maybe xs
+  @include media($md) {
     grid-template-columns: 1fr;
     gap: 44px;
     max-width: 700px;
@@ -15,7 +15,7 @@
 }
 
 .advantages-list__item {
-  @include media($md) { //maybe xs
+  @include media($md) {
     display: grid;
     grid-template-columns: 80px 1fr;
     gap: 50px;

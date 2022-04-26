@@ -45,10 +45,6 @@
     overflow-x: auto;
     margin-left: 0;
   }
-
-  @include media($xs) {
-    // grid-template-columns: 1fr;
-  }
 }
 
 .partners__link {
